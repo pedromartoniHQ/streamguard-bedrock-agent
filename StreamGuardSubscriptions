@@ -1,0 +1,36 @@
+sub-101> {
+ "subscription_id": "SUB-101",
+ "account_flag": "CLEAN",
+ "plan_amount": 29.9,
+ "status": "REFUNDED",
+ "user_name": "Alice Smith",
+ "watch_percentage": 5
+}
+
+sub-102> {
+ "subscription_id": "SUB-102",
+ "account_flag": "CLEAN",
+ "plan_amount": 149.9,
+ "status": "ACTIVE",
+ "user_name": "Bob Jones",
+ "watch_percentage": 2
+}
+
+sub-103 > {
+ "subscription_id": "SUB-103",
+ "account_flag": "CLEAN",
+ "plan_amount": 29.9,
+ "status": "ACTIVE",
+ "user_name": "Charlie Brown",
+ "watch_percentage": 45
+}
+
+
+sub-104> {
+ "subscription_id": "SUB-104",
+ "account_flag": "CHARGEBACK_HISTORY",
+ "plan_amount": 19.9,
+ "status": "ACTIVE",
+ "user_name": "Eve Hacker",
+ "watch_percentage": 0
+}
