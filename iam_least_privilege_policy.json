@@ -1,0 +1,24 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowOnlySingleItemReadAndUpdate",
+            "Effect": "Allow",
+            "Action": [
+                "dynamodb:GetItem",
+                "dynamodb:UpdateItem"
+            ],
+            "Resource": "arn:aws:dynamodb:us-east-1:*:table/StreamGuardSubscriptions"
+        },
+        {
+            "Sid": "ExplicitDenyDeleteAndBulkScan",
+            "Effect": "Deny",
+            "Action": [
+                "dynamodb:DeleteItem",
+                "dynamodb:Scan",
+                "dynamodb:BatchWriteItem"
+            ],
+            "Resource": "arn:aws:dynamodb:us-east-1:*:table/StreamGuardSubscriptions"
+        }
+    ]
+}
